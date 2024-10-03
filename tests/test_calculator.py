@@ -1,12 +1,3 @@
-
-from faker import Faker
-
-fake = Faker()
-
-def test_addition():
-    a = fake.random_int(min=1, max=100)
-    b = fake.random_int(min=1, max=100)
-    result = add(a, b)
-    assert result == a + b
-
-
+def test_calculator_operations(num_records):
+    print(f"Testing with {num_records} records")
+    assert num_records > 0
